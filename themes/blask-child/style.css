@@ -34,3 +34,15 @@ p
   	background-color: #555;
   	border-radius: 40%;}
 
+/* modify theme css to make headers capitalized as entered on the Wordpress backend. The theme css uses the text-transform property to do all UPPERCASE */
+
+.h1 {
+	text-transform:none;
+	line-height: 0.6;
+}
+
+.h2 {
+	text-transform:none;
+	line-height: 0.6;
+
+}
