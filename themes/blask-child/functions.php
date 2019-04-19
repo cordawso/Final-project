@@ -10,12 +10,3 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
-// add custom menu to the theme
-function wpb_custom_new_menu() {
-  register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
-}
-add_action( 'init', 'wpb_custom_new_menu' );
-
-//remove the welcome panel. It's annoying
-
-remove_action('welcome_panel', 'wp_welcome_panel');
