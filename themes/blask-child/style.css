@@ -45,4 +45,46 @@ p
 	text-transform:none;
 	line-height: 0.6;
 
+}/* 1. change social links to their respective colors. Theme default just had gray. 
+	2. Make icons rounded corners. */
+
+.social-links ul a[href*='twitter.com']::before {
+	content: '\f202';
+	background-color: #c0deed;
+/* twitter blue*/
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+}
+
+.social-links ul a[href*='instagram.com']::before {
+	content: '\f215';
+	background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+/* Instagram gradient background credit: https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
+height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+
+  }
+
+
+.social-links ul a[href*='linkedin.com']::before 
+{
+	content: '\f207';
+	background-color: #0077B5;
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+}
+
+.social-links ul a[href*='mailto:']::before {
+	content: '\f410';
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
 }
