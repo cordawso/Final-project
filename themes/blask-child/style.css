@@ -1,0 +1,97 @@
+/*
+Theme Name: Blask Child
+Theme URI: https://wordpress.com/themes/blask/
+Description: Blask is a modern portfolio theme focused on showcasing your work in a clean and minimal way.
+Version: 1.1.2
+Author: Automattic
+Author URI: http://wordpress.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lask
+Template: Blask
+Text Domain:Blask-child
+Tags: custom-background, custom-colors, custom-menu, portfolio, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* change font to arial*/
+
+p 
+		{ font-family: "Arial"; 
+			font-size: 14px; 
+			font-style: normal; 
+			font-variant: normal; 
+			font-weight: 400; 
+			line-height: 20px; 
+		} 
+
+/* change dropdown menu icon shape*/
+
+.dropdown-toggle
+
+	{ 
+	height: 50px;
+ 	 width: 50px;
+  	background-color: #555;
+  	border-radius: 50%;}
+
+ /* modify theme css to make headers capitalized as entered on the Wordpress backend. The theme css uses the text-transform property to do all UPPERCASE */
+
+.h1 {
+	text-transform:none;
+	line-height: 0.6;
+}
+
+.h2 {
+	text-transform:none;
+	line-height: 0.6;
+
+}
+/* 1. change social links to their respective colors. Theme default just had gray. 
+	2. Make icons rounded corners. */
+
+.social-links ul a[href*='twitter.com']::before {
+	content: '\f202';
+	background-color: #c0deed;
+/* twitter blue*/
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+}
+
+.social-links ul a[href*='instagram.com']::before {
+	content: '\f215';
+	background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+/* Instagram gradient background credit: https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
+height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+
+  }
+
+
+.social-links ul a[href*='linkedin.com']::before 
+{
+	content: '\f207';
+	background-color: #0077B5;
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+}
+
+.social-links ul a[href*='mailto:']::before {
+	content: '\f410';
+	height: 40px;
+ 	width: 40px;
+  	border-radius: 40%;
+}
+
+.menu-item-120
+
+{background-color: blue;}
+
+
