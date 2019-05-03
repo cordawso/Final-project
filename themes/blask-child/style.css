@@ -15,24 +15,24 @@ Tags: custom-background, custom-colors, custom-menu, portfolio, rtl-language-sup
 
 /* change font to arial*/
 
-p 
-		{ font-family: "Arial"; 
-			font-size: 14px; 
-			font-style: normal; 
-			font-variant: normal; 
-			font-weight: 400; 
-			line-height: 20px; 
-		} 
+p { 
+	font-family: "Arial"; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 20px; 
+} 
 
 /* change dropdown menu icon shape*/
 
-.dropdown-toggle
-
-	{ 
+.dropdown-toggle { 
+	
 	height: 50px;
- 	 width: 50px;
+ 	width: 50px;
   	background-color: #555;
-  	border-radius: 40%;}
+  	border-radius: 40%;
+}
 
 /* modify theme css to make headers capitalized as entered on the Wordpress backend. The theme css uses the text-transform property to do all UPPERCASE */
 
@@ -44,8 +44,9 @@ p
 .h2 {
 	text-transform:none;
 	line-height: 0.6;
+}
 
-}/* 1. change social links to their respective colors. Theme default just had gray. 
+/* 1. change social links to their respective colors. Theme default just had gray. 
 	2. Make icons rounded corners. */
 
 .social-links ul a[href*='twitter.com']::before {
@@ -60,21 +61,18 @@ p
 .social-links ul a[href*='instagram.com']::before {
 	content: '\f215';
 	background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 /* Instagram gradient background credit: https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
-height: 40px;
+	height: 40px;
  	width: 40px;
   	border-radius: 40%;
-
   }
 
 
-.social-links ul a[href*='linkedin.com']::before 
-{
+.social-links ul a[href*='linkedin.com']::before {
 	content: '\f207';
 	background-color: #0077B5;
 	height: 40px;
@@ -92,10 +90,11 @@ height: 40px;
 /* Stop display of headers and footer credit  */
 
 
-.entry-header
-	{
-	display: none;}
+.entry-header {	
+	display: none;
+}
 
-#colophon
-{display:none;}
+#colophon {
+	display:none;
+}
 
