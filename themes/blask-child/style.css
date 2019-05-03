@@ -98,3 +98,30 @@ p {
 	display:none;
 }
 
+/* Removed faulty dropdown menu, resized, and added new arrows for uncollapsing and collapsing menu */
+
+.dropdown-toggle{
+	background-color:white;
+	overflow: hidden;
+	width:30px;
+	height:30px;
+	top:9px
+	!important;
+}
+
+.dropdown-toggle[aria-expanded="true"]{
+ 	background-image:url("https://image.flaticon.com/icons/svg/126/126492.svg")
+	!important;
+}
+
+.dropdown-toggle[aria-expanded="false"]{
+	 background-image:url("https://image.flaticon.com/icons/svg/118/118738.svg")
+	!important;
+}
+
+button.dropdown-toggle::before{
+	display:none;
+
+}
+
+
